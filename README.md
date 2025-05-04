@@ -1,16 +1,34 @@
-# 🌾 **Proyek Klasifikasi Gambar dengan CNN pada Dataset Rice Image Detection**
+## 🌾 **Proyek Klasifikasi Gambar dengan CNN pada Dataset Rice Image Detection**
 
-## 📝 **Deskripsi**
-Proyek ini menggunakan **Convolutional Neural Network (CNN)** untuk mengklasifikasikan gambar menjadi beberapa kelas berdasarkan dataset gambar padi. Model dilatih dengan dataset yang telah diproses dan dibagi menjadi data **training**, **validasi**, dan **test**, sehingga dapat mengidentifikasi berbagai jenis gambar padi secara akurat.
+## 📝 Deskripsi
+Proyek ini merupakan bagian dari **Coding Camp 2025 – DBS Foundation**, yang mengimplementasikan **Convolutional Neural Network (CNN)** untuk mengklasifikasikan gambar padi. Model ini dirancang untuk mengidentifikasi jenis padi secara akurat berdasarkan gambar dengan proses:
 
-## 📂 **Struktur Direktori**
-- **`saved_model/`**: Menyimpan model dalam format **TensorFlow SavedModel**.
-- **`tflite/`**: Menyimpan model dalam format **TensorFlow Lite** untuk optimasi perangkat mobile.
-- **`tfjs_model/`**: Menyimpan model dalam format **TensorFlow.js** untuk aplikasi web.
+- 🖼️ **Pengolahan Dataset Gambar**
+- 🧪 **Data Augmentation** (peningkatan variasi data)
+- 🧠 **Pembuatan Model CNN (Sequential)**
+- 📊 **Visualisasi Akurasi & Loss**
+- 🧾 **Evaluasi Model** menggunakan *Confusion Matrix* dan *Classification Report*
 
-## 🚀 **Cara Menjalankan**
-1. Buka file `submission-klasifikasi-gambar.ipynb` untuk melihat langkah-langkah pelatihan dan evaluasi model.
-2. Gunakan TensorFlow atau TFJS untuk melakukan inference dengan model yang telah disimpan.
+## 📊 Hasil Model
+- **Training Accuracy**: 99.71%
+- **Validation Accuracy**: 99.733%
+- **Contoh hasil inference**: Model berhasil memprediksi kelas *Basmati* dengan probabilitas **1.0000**.
+
+## 🧰 Tools yang Digunakan
+- Bahasa Pemrograman: **Python**
+- Framework: **TensorFlow**, **Keras**
+
+## 📂 Struktur Direktori
+- `saved_model/`: Menyimpan model dalam format **TensorFlow SavedModel**.
+- `tflite/`: Model dalam format **TensorFlow Lite** – cocok untuk aplikasi mobile dan embedded systems.
+- `tfjs_model/`: Model dalam format **TensorFlow.js** – digunakan langsung di browser web.
+
+## 🚀 Cara Menjalankan
+1. Buka file `submission-klasifikasi-gambar.ipynb` untuk melihat alur pelatihan, validasi, dan evaluasi model.
+2. Gunakan salah satu format model untuk melakukan **inference**:
+   - **SavedModel**: Untuk pengujian standar di TensorFlow.
+   - **TFLite**: Untuk perangkat mobile.
+   - **TFJS**: Untuk aplikasi berbasis web.
 
 . **Clone repositori ini:**
    ```bash
